@@ -2,9 +2,9 @@
 
 # DOES NOT WORK
 
-See [So close](#So-close).
+See [So close](#so-close).
 
-Read [Security](#Security) for security issues.
+Read [Security](#security) for security issues.
 
 Leo is a Python / PyQt5 editor / IDE / info. manager: http://leoeditor.com/
 
