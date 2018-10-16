@@ -1,7 +1,7 @@
 FROM oznu/guacamole
 
 RUN apt-get update \
- && apt-get install -y xterm git python3 python3-pyqt5 dwm tightvncserver \
+ && apt-get install -y xterm git python3 python3-pyqt4 dwm tightvncserver \
  && groupadd leouser \
  && useradd -g leouser leouser \
  && mkdir /home/leouser \

@@ -49,14 +49,20 @@ open Leo in the web-browser, try opening the connection called `test`.
 
 When you exit Leo, the whole container exits.
 
-## So close
+## Caveats
 
-This almost works, but not quite.  There are three VNC servers in the Alpine
-Linux distribution.  Under `vnc4server` and `tigervncserver` PyQt5 seg. faults
-when you try and run Leo.  The Dockerfile in this repo. installs `tightvncserver`,
-which runs Leo, but the keyboard mapping is hopelessly messed up.  As in you
-can't type even plain text.  Fixing this may be as simple as using PyQt4,
-I haven't tried that.
+ - `Ctrl-W` closes the browser tab, not the Leo tab.
+ - These docs. don't cover keeping your work (a Docker admin. detail) or
+   deploying the container on the internet.
+ - A folder `conf` is created by guacamole in the folder from which
+   you `docker run` this, it may belong to root.  That's normal docker
+   behavior.
+ - If you use PyQt5, this almost works, but not quite.
+   There are three VNC servers in the Alpine
+   Linux distribution.  Under `vnc4server` and `tigervncserver` PyQt5 seg. faults
+   when you try and run Leo.  The Dockerfile in this repo. installs `tightvncserver`,
+   which runs Leo, but the keyboard mapping is hopelessly messed up.  As in you
+   can't type even plain text.  That's why this uses PyQt4.
 
 ## Security
 
