@@ -58,11 +58,12 @@ When you exit Leo, the whole container exits.
    Linux distribution.  Under `vnc4server` and `tigervncserver` PyQt5 seg. faults
    when you try and run Leo.  The Dockerfile in this repo. installs `tightvncserver`,
    which runs Leo, but the keyboard mapping is hopelessly messed up.  As in you
-   can't type even plain text.  That's why this uses PyQt4.
+   can't type even plain text - a VNC/X11 issue, not Leo related.
+   That's why this uses PyQt4.
 
 ## Security
 
-guacadmin/guacadmin is the globally know default login to guacamole, and
+guacadmin/guacadmin is the globally known default login to guacamole, and
 may allow others to see stuff on you're machine if (a) you expose it to the
 internet, and (b) you have a VNC service running on your machine.  It's a
 small manageable risk, but if you don't know about these things and don't
