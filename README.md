@@ -1,9 +1,5 @@
 # Stand-alone Leo / guacamole docker container
 
-# DOES NOT WORK
-
-See [So close](#so-close).
-
 Read [Security](#security) for security issues.
 
 Leo is a Python / PyQt5 editor / IDE / info. manager: http://leoeditor.com/
